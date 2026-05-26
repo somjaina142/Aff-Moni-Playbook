@@ -1,0 +1,91 @@
+/*  Affiliate CTA Buttons */
+/* For use in blog articles — insert via <a class="sav-aff-btn ..."> in article content HTML */
+/* Yoda: Add this to the global stylesheet (static/css/ or equivalent) */
+
+.sav-aff-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  text-align: center;
+  margin: 8px 4px;
+  line-height: 1.5;
+}
+
+.sav-aff-btn-primary {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.3);
+}
+
+.sav-aff-btn-primary:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 12px -2px rgba(37, 99, 235, 0.4);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.sav-aff-btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px -1px rgba(37, 99, 235, 0.3);
+}
+
+.sav-aff-btn-secondary {
+  background: #ffffff;
+  color: #2563eb;
+  border: 2px solid #2563eb;
+}
+
+.sav-aff-btn-secondary:hover {
+  background: #eff6ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px -2px rgba(37, 99, 235, 0.2);
+  text-decoration: none;
+  color: #1d4ed8;
+}
+
+.sav-aff-btn-secondary:active {
+  transform: translateY(0);
+}
+
+/* Inline text link variant for mentions within paragraphs */
+.sav-aff-link {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease;
+}
+
+.sav-aff-link:hover {
+  color: #1d4ed8;
+}
+
+/* Button container for side-by-side CTAs */
+.sav-aff-btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 16px 0;
+  align-items: center;
+}
+
+/* Mobile responsive */
+@media (max-width: 640px) {
+  .sav-aff-btn {
+    display: block;
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+  .sav-aff-btn-group {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
